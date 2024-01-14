@@ -5,6 +5,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  /* font-color */
+  --primary-color: #3a3a3a;
+  --secondary-color: #e02c6d;
+}
 .btn-primary {
   color: #fff;
   font-size: 16px;
@@ -17,4 +22,61 @@
   gap: 8px;
   background: #e02c6d;
   border: none;
+}
+.container {
+  max-width: 1150px;
+  margin: auto;
+}
+/***************** Header Section *****************/
+header {
+  padding: 50px 0;
+}
+/* navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+nav > a {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+nav ul li a {
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+nav ul li:hover a {
+  color: var(--secondary-color);
+}
+
+/* banner section */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+/* banner content */
+.banner h1 {
+  color: #3a3a3a;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+}
+.banner p {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
