@@ -33,6 +33,27 @@
     gap: 20px;
     padding: 50px 20px;
   }
+
+  /* feature section */
+  .featured-section {
+    padding-top: 50px;
+  }
+  .feature {
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+  .feature-img {
+    width: 100%;
+  }
+  .feature-content {
+    width: 100%;
+    text-align: center;
+  }
+  .f-btn {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /***************** Mobile Section *****************/
@@ -100,5 +121,13 @@
   }
   .popular-section {
     padding: 0 30px;
+  }
+
+  /* featuer section */
+  .feature-img {
+    order: 2;
+  }
+  .feature-content {
+    order: 1;
   }
 }
