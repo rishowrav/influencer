@@ -131,3 +131,47 @@
     order: 1;
   }
 }
+
+/********************* footer section *********************/
+footer {
+  background: #0a0826;
+  text-align: center;
+  padding: 50px 0;
+}
+.f-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.f-content h3 {
+  color: #fff;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: normal;
+}
+.f-content p {
+  color: hsl(225, 12%, 87%);
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+}
+.f-content ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+}
+.f-content ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  font-size: 1rem;
+  color: white;
+  border: 1px solid hsl(242, 29%, 18%);
+  text-decoration: none;
+  border-radius: 50%;
+  background: hsl(242, 29%, 18%);
+}
