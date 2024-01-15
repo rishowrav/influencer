@@ -1,0 +1,66 @@
+/* Responsive css */
+/***************** Tab Section *****************/
+@media screen and (max-width: 992px) {
+  /* header section */
+  .container {
+    padding: 0 50px;
+  }
+  /* navigation bar */
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* banner content */
+  .banner h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .banner-content {
+    width: 50%;
+  }
+  .banner-img {
+    width: 45%;
+  }
+}
+
+/***************** Mobile Section *****************/
+@media screen and (max-width: 767px) {
+  /* header section */
+  .container {
+    padding: 0 10px;
+  }
+  /* navigation bar */
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* banner */
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  /* banner-content */
+  .banner-content {
+    width: 100%;
+    order: 2;
+  }
+  .banner-content > div {
+    display: flex;
+    justify-content: center;
+  }
+  /* banner img */
+  .banner-img {
+    width: 100%;
+    order: 1;
+  }
+  .banner-img img {
+    width: 80%;
+  }
+}
