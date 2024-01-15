@@ -1,6 +1,6 @@
 /* Responsive css */
 /***************** Tab Section *****************/
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   /* header section */
   .container {
     padding: 0 50px;
@@ -26,10 +26,17 @@
   .banner-img {
     width: 45%;
   }
+
+  /* brand Section */
+  .brand-section {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 50px 20px;
+  }
 }
 
 /***************** Mobile Section *****************/
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   /* header section */
   .container {
     padding: 0 10px;
@@ -62,5 +69,36 @@
   }
   .banner-img img {
     width: 80%;
+  }
+
+  /* brand Section */
+
+  /* Popular Section */
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ***************** smart phone ***************** */
+@media only screen and (max-width: 600px) {
+  /* brand section */
+  .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .brand-section img {
+    width: 100%;
+  }
+
+  /* popular section */
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card img {
+    width: 100%;
+  }
+  .popular-section {
+    padding: 0 30px;
   }
 }
